@@ -1,0 +1,14 @@
+identifier: custom_nrf9160
+name: custom-NRF9160
+type: mcu
+arch: arm
+toolchain:
+  - gnuarmemb
+  - xtools
+  - zephyr
+ram: 88
+flash: 256
+supported:
+  - gpio
+  - watchdog
+  - counter

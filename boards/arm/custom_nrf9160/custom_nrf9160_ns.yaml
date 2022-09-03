@@ -1,0 +1,13 @@
+identifier: custom_nrf9160_ns
+name: custom-NRF9160-Non-Secure
+type: mcu
+arch: arm
+toolchain:
+  - gnuarmemb
+  - xtools
+  - zephyr
+ram: 128
+flash: 192
+supported:
+  - gpio
+  - watchdog

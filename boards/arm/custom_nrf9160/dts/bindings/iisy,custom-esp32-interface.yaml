@@ -1,0 +1,17 @@
+# Copyright (c) 2021 Nordic Semiconductor ASA
+# SPDX-License-Identifier: Apache-2.0
+
+description: |
+    custom GPIO interface between nRF9160, esp32 and PCAL6416A
+
+    This interface can be used for inter-SoC communication on the board.
+    The connections are as follows:
+
+    | nRF9160  |                  |    esp32    |  PCAL6416A  |
+    |  P0.28   | -- UART RX/TX -- |    GPIO3    |             |
+    |  P0.29   | -- UART TX/RX -- |    GPIO2    |             |
+    |  ENABLE  | -- NRF9160 EN -- |             |    P1.7     |
+
+compatible: "iisy,custom-esp32-interface"
+
+include: [gpio-nexus.yaml, base.yaml]
